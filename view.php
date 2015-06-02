@@ -4,7 +4,7 @@
 	<title>Saved snippets</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<?php
 			$itr = new DirectoryIterator('savedfiles');
 			foreach ($itr as $file) {
