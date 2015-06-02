@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html><!--comment-->
 <head>
 	<title>Saved snippets</title>
 </head>
