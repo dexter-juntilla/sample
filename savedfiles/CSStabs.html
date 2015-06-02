@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSStabs.html</title>
+<style type="text/css">
+.tabs{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+.tabs:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 242px;
+}
+
+.tabs li{
+	float: left;
+}
+
+.tabs li > input{
+	display: none;
+}
+
+.tabs li > label{
+	display: inline-block;
+	border: 1px solid #000;
+	border-right-width: 0;
+	border-bottom-width: 1px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.tabs li:last-child > label{
+	border-right-width: 1px;
+}
+
+.tabs .tab-content{
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	border: 1px solid #000;
+	height: 200px;
+	overflow-y: scroll;
+	border-top: 0;
+}
+
+/*Functional*/
+
+.tabs li > input:checked + label{
+	border-bottom: 0;
+	border-radius: 0 20px 0 0;
+}
+
+.tabs li > input:checked ~ .tab-content{
+	display: block;
+}
+</style>
+</head>
+<body>
+<ul class="tabs">
+	<li>
+		<input type="radio" name="tabs" id="tab-1" checked>
+		<label for="tab-1">First</label>
+		<div class="tab-content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</p>
+		</div>
+	</li>
+	<li>
+		<input type="radio" name="tabs" id="tab-2">
+		<label for="tab-2">Second</label>
+		<div class="tab-content">
+			<p>
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			</p>
+		</div>
+	</li>
+	<li>
+		<input type="radio" name="tabs" id="tab-3">
+		<label for="tab-3">Third</label>
+		<div class="tab-content">
+			<p>
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</li>
+</ul>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

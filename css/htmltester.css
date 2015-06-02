@@ -1,0 +1,54 @@
+#container{
+	display: inline;
+	float: left;
+	width: 35%;
+	margin:0 auto;
+}
+
+#wrapper{
+	margin-left: 5px;
+}
+
+.code{
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+	font-size: 10px; 
+	color: #000;
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-color: #ccc;
+	display: inline-block;
+	clear: left;
+	float: left;
+	width: 95%;
+	height: 195px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+#output{
+	min-width: 10px;
+	min-height: 10px;
+	background-image: url("../img/blue.png");
+	background-repeat: repeat;
+	float: left;
+	display: inline;
+	height: 887px;
+	width: 60%;
+	padding: 10px;
+	margin-left: 0px;
+}
+/*@media(max-width: 480px){
+		#output{
+			display: block;
+			clear: both;
+		}
+		#input{
+			width: 100%;
+			display: block;
+			clear: both;
+		}
+}*/

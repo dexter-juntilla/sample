@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>cssflip3D.html</title>
+<style type="text/css">
+.flip3D{
+	width: 240px;
+	height: 200px;
+}
+
+.flip3D > .front{
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	background: #fc0;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+.flip3D > .rear{
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	background: #80bfff;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+
+.flip3D:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .rear{
+	transform: perspective(600px) rotateY(0deg);
+}
+</style>
+</head>
+<body>
+<div class="flip3D">
+	<div class="front">Box front </div>
+	<div class="rear">Box rear</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

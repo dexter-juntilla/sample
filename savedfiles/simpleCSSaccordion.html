@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>simpleCSSaccordion.html</title>
+<style type="text/css">
+.container{
+   width:100%;
+   max-width:400px;
+}
+
+.accordion{
+   width:100%;
+   padding:0;
+   margin:0;
+   list-style-type:none;
+}
+
+.accordion-header{
+   display:block;
+   padding:15px 20px;
+   background:#bbb;
+   color:#fff;
+   text-decoration:none;
+   font-size:1.2em;
+   text-transform:uppercase;
+   text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+   margin-bottom:5px;
+}
+
+.accordion-content p{
+   margin:0 0 20px;
+   
+}
+
+.accordion-content{
+   padding:0;
+   height:0;
+   overflow:hidden;
+}
+
+.accordion-content:target{
+   height:auto;
+   padding:20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+   <ul class="accordion">
+      <li>
+         <a href="#first" class="accordion-header">First</a>
+         <div class="accordion-content" id="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+         </div>
+      </li>
+      <li>
+         <a href="#second" class="accordion-header">Second</a>
+         <div class="accordion-content" id="second">
+            <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+      <li>
+         <a href="#third" class="accordion-header">Third</a>
+         <div class="accordion-content" id="third">
+            <p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+      </li>
+         </div>
+      </li>
+   </ul>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
